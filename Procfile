@@ -1,1 +1,1 @@
-static: /:build
+static: build
