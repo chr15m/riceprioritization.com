@@ -100,7 +100,7 @@
    [:p "For example two people taking four weeks would be 8 person weeks of effort."]
    [:p "You can enter any value here but try to stick to whole numbers, or use a smaller person-time-unit."]
    [:h3 "Calculation"]
-   [:p "Finally, here's a reminder of the RICE score caluculation: " [:code "(R x I x C) / E"]]
+   [:p "Finally, here's a reminder of the RICE score calculation: " [:code "(R x I x C) / E"]]
    [:p "The calculator above will use your numbers to sort your options into priority order."]])
 
 (defn component-main [state]
