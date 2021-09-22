@@ -11,6 +11,10 @@ html, body, #app, #loading {
   height: 100%;
 }
 
+footer {
+  margin: 5em 0px;
+}
+
 footer p {
   text-align: center;
 }
