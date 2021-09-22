@@ -53,6 +53,11 @@ td > input {
   width: 100%;
 }
 
+#sort {
+  text-align: right;
+  margin-top: 1em;
+}
+
 /*** loading spinner ***/
 
 #loading {
