@@ -119,7 +119,8 @@
    [component-documentation state]
    [:footer
     [:p [:a {:href "mailto:chris@mccormick.cx?subject=riceprioritization.com feedback"} "Feature request?"]]   
-    [:p "Made with 🤖 by " [:a {:href "https://twitter.com/mccrmx" :taret "_BLANK"} "@mccrmx"]]]])
+    [:p "Made with 🤖 by " [:a {:href "https://twitter.com/mccrmx" :taret "_BLANK"} "@mccrmx"]]
+    [:p [:a {:href "https://github.com/chr15m/riceprioritization.com"} "source code"]]]])
 
 (defn start {:dev/after-load true} []
   (rdom/render [component-main state]
