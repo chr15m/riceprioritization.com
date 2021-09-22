@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #fffff8;
+  font-size: 1.25em;
+}
+
+html, body, #app, #loading {
+  height: 100%;
+}
+
+footer p {
+  text-align: center;
+}
+
+/*** table styling ***/
+
+table {
+  padding: 1em 0px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table thead tr {
+  border-bottom: 1px solid #333;
+}
+
+table thead th {
+  text-align: left;
+  padding: 0.25em;
+}
+
+table td {
+  text-align: right;
+}
+
+table td input {
+  border: none;
+  padding: 0.25em;
+}
+
+table td.name {
+  width: 100%;
+}
+
+table td.name input {
+  background: none;
+}
+
+td > input {
+  width: 100%;
+}
+
+#sort {
+  text-align: right;
+  margin-top: 1em;
+}
+
+/*** loading spinner ***/
+
+#loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#loading div {
+  animation: spin 0.33s linear infinite;
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  border: 3px solid transparent;
+  border-left: 3px solid silver;
+  border-right: 3px solid silver;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
