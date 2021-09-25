@@ -87,7 +87,8 @@
             [:option {:value "80"} "mid"]
             [:option {:value "50"} "low"]]]
           [component-column state r :effort {:type :number :placeholder "1000"}]
-          [:td.score (if (js/isNaN score) "" score)]]))]]
+          [:td.score (if (js/isNaN score) "" score)]
+          [:td [:button {:on-click #(swap! state update-in [:rows] (fn [rows] (-> rows (dissoc r) sort-rows)))} "X"]]]))]]
    [:div#sort
     [:button {:on-click #(swap! state update-in [:rows] sort-rows)} "sort"]]])
 
