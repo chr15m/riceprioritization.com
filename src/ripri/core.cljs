@@ -3,7 +3,16 @@
             [reagent.dom :as rdom]
             [alandipert.storage-atom :refer [local-storage]]))
 
-(defonce state (local-storage (r/atom {}) :app-state))
+(def initial-state
+  {:project-name ""
+   :units {:effort "person weeks", :reach "people", :reach-time "month"}
+   :rows {0 {:name "Build the ultra tech" :reach "5000" :impact "1" :confidence "80" :effort "4"}
+          1 {:name "Publish a blog post" :reach "100" :impact "1" :confidence "100" :effort "1"}
+          2 {:name "Release the hounds" :reach "10" :impact "2" :confidence "50" :effort "2"}}})
+
+(defonce state (local-storage (r/atom initial-state) :app-state))
+
+; (remove-local-storage! :app-state)
 
 (defn log [& args]
   (apply js/console.log (clj->js args))
